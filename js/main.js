@@ -32,7 +32,7 @@ function getSigninValues() {
     } // checks if sign in inputs are empty
 
     var login = {
-        email: loginEmail.value,
+        email: loginEmail.value.toLowerCase(),
         password: loginPassword.value,
     }
 
@@ -68,7 +68,7 @@ function getSignupValues() {
 
     var UserSignup = {
         name: signupName.value,
-        email: signupEmail.value,
+        email: signupEmail.value.toLowerCase(),
         password: signupPassword.value,
     }
     
