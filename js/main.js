@@ -157,8 +157,8 @@ window.onload = function () {
     var isLoggedIn = localStorage.getItem("isLoggedIn");
 
     if (isLoggedIn !== "true") {
-        if (window.location.pathname == "/home.html") {
-            window.location.href = "index.html";
+        if (window.location.pathname == "https://ahmedgamal208.github.io/Login/home.html") {
+            window.location.href = "https://ahmedgamal208.github.io/Login/index.html";
         }
     } else {
         displayUsername();
