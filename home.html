@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <script>
+      // Check if the user is logged in
+      window.onload = function() {
+          var isLoggedIn = localStorage.getItem("isLoggedIn"); // or sessionStorage.getItem("isLoggedIn");
+
+          if (isLoggedIn !== "true") {
+              window.location.href = "index.html"; 
+          }
+      }
+  </script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg  fixed-top bg-transparent">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <a class="navbar-brand text-uppercase text-white" href="#">Smart Login</a>
+          <a class="btn btn-primary logoutBtn p-2" href="./index.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="overflow-hidden vh-100 d-flex justify-content-center align-items-center">
+      <div class="container text-center ">
+        <div class="card my-5 w-75 p-5 m-auto">
+          <h1 id="welcomeMessage"></h1> <!-- This will display the welcome message with the username -->
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

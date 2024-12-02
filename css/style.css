@@ -1,0 +1,52 @@
+body {
+  background-color: #24353f;
+  font-family: sans-serif;
+}
+
+nav {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+.logoutBtn {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5) !important;
+  border-color: #ffc107;
+  border-radius: .25rem;
+}
+
+.logoutBtn:hover {
+  text-decoration: none !important;
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: white !important;
+}
+
+main {
+  min-height: 100vh;
+}
+
+main .card {
+  background-color: #24353f;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  border-radius: 0;
+}
+
+h1 {
+  color: #17a2b8;
+}
+
+input {
+  color: white !important;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.589) !important;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+}
+
+.signupBtn:hover, .loginBtn:hover {
+  color: white;
+}
